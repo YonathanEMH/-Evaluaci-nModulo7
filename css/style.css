@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+.encabezado-principal {
+  background-color: #1c1c1c;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.contenedor-principal {
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 2px 2px 8px #ccc;
+}
+
+.titulo-seccion {
+  color: #2a2a2a;
+  margin-bottom: 15px;
+}
+
+.tarjeta {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #fafafa;
+}
+
+.tarjeta:hover {
+  background-color: #e6f7ff;
+}
+
+/* Botones del test */
+.boton-test {
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.boton-test:hover {
+  background-color: #0056b3;
+}
+
+/* Resultado del test */
+.resultado-test {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #006400;
+}
+
+/* Pie de página */
+.pie-pagina {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  margin-top: 50px;
+}
+
+/* Formulario */
+.formulario input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Navegación */
+.navegacion .opcion {
+  font-weight: normal;
+  color: #007bff;
+  text-decoration: none;
+}
+.navegacion .opcion.activa {
+  font-weight: bold;
+  color: #ff6600;
+}
+
+header.jumbotron {
+  background-image: url('../img/banner_ciberseguridad.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 20px;
+  text-shadow: 1px 1px 2px black;
+}
