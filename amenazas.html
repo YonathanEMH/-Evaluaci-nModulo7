@@ -1,102 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amenazas Comunes</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Ciberseguridad</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="amenazas.html">Amenazas Comunes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="consejos.html">Consejos de Seguridad</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amenazas Comunes</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
 
-    <main class="container mt-4">
-      <h2>Amenazas Cibernéticas Comunes</h2>
-      <div class="card-deck mt-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Phishing</h5>
-            <p class="card-text">
-              Intento de engañar a los usuarios para que revelen información
-              confidencial.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Ransomware</h5>
-            <p class="card-text">
-              Software malicioso que bloquea el acceso hasta que se paga un
-              rescate.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">DDoS</h5>
-            <p class="card-text">
-              Ataque de denegación de servicio que sobrecarga un servidor para
-              interrumpir su funcionamiento.
-            </p>
-          </div>
-        </div>
-      </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Ciberseguridad</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item active"><a class="nav-link" href="amenazas.html">Amenazas Comunes</a></li>
+        <li class="nav-item"><a class="nav-link" href="consejos.html">Consejos de Seguridad</a></li>
+      </ul>
+    </div>
+  </nav>
 
-      <div id="casosReales" class="accordion mt-4">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
-              <button
-                class="btn btn-link"
-                data-toggle="collapse"
-                data-target="#collapseOne"
-              >
-                Caso: Phishing en bancos
-              </button>
-            </h5>
-          </div>
-          <div id="collapseOne" class="collapse" data-parent="#casosReales">
-            <div class="card-body">
-              Un ataque masivo de phishing dirigido a clientes bancarios generó
-              pérdidas millonarias.
-            </div>
+  <main class="container mt-5">
+    <h2 class="text-center mb-4">Amenazas Cibernéticas Comunes</h2>
+    <p>
+      En el mundo digital actual, es crucial estar informado sobre las amenazas cibernéticas más comunes. Aquí te presento algunas de las más frecuentes:
+    </p>
+    <div class="card-deck mt-4">
+  <div class="card">
+    <img src="img/phishing.jpg" class="card-img-top" alt="Phishing">
+    <div class="card-body">
+      <h5 class="card-title">Phishing</h5>
+      <p class="card-text">
+        Intento de engañar a los usuarios para que revelen información confidencial.
+      </p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/ransomware.jpg" class="card-img-top" alt="Ransomware">
+    <div class="card-body">
+      <h5 class="card-title">Ransomware</h5>
+      <p class="card-text">
+        Software malicioso que bloquea el acceso hasta que se paga un rescate.
+      </p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/ddos.jpg" class="card-img-top" alt="DDoS">
+    <div class="card-body">
+      <h5 class="card-title">DDoS</h5>
+      <p class="card-text">
+        Ataque de denegación de servicio que sobrecarga un servidor para interrumpir su funcionamiento.
+      </p>
+    </div>
+  </div>
+</div>
+
+    <h3 class="mt-5">Casos Reales</h3>
+    <div class="accordion" id="casosReales">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne">
+              Phishing en bancos
+            </button>
+          </h2>
+        </div>
+        <div id="collapseOne" class="collapse show" data-parent="#casosReales">
+          <div class="card-body">
+            En 2023, una campaña de phishing dirigida a clientes de bancos chilenos resultó en el robo de miles de credenciales y pérdidas millonarias.
           </div>
         </div>
       </div>
-    </main>
+      
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo">
+              Ransomware en hospitales
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" data-parent="#casosReales">
+          <div class="card-body">
+            En 2021, hospitales en Europa fueron atacados con ransomware, impidiendo el acceso a historiales clínicos y causando caos en la atención médica.
+          </div>
+        </div>
+      </div>
 
-    <footer class="bg-dark text-white text-center p-3 mt-4">
-      &copy; 2025 Sitio de Ciberseguridad
-    </footer>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree">
+              DDoS a plataformas de juegos
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" data-parent="#casosReales">
+          <div class="card-body">
+            Empresas como Sony y Microsoft han sido víctimas de ataques DDoS en fechas clave, dejando inoperativos sus servicios durante horas.
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+  <footer class="bg-dark text-white text-center p-3 mt-4">
+      &copy; 2025 Sitio Creado por <strong>Yonathan Maldonado</strong>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
